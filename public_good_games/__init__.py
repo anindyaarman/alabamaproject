@@ -23,7 +23,7 @@ class Player(BasePlayer):
         min=0, max=C.ENDOWMENT, label='How many tokens do you think are in your group account?'
     )
     code_number = models.IntegerField(label="Code Number")
-    studentid = models.StringField(label="Student ID number")
+    ncsu = models.StringField(label="Student ID number")
     gender = models.StringField(widget=widgets.RadioSelect, choices=['Male', 'Female'], label="Gender")
     major = models.StringField(label="Major")
     semester = models.IntegerField(label="Semester currently in")
